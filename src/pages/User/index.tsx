@@ -33,11 +33,9 @@ export const Users = () => {
         }
     }
 
-    useEffect(() => {
-        if (user) {
-            localStorage.setItem('user', JSON.stringify(user));
-        }
-    }, [user])
+   /*  useEffect(() => {
+        localStorage.setItem('user', JSON.stringify(user));
+    }, [user]) */
 
     const renderCard = Object.keys(user).length > 0;
 
@@ -47,7 +45,7 @@ export const Users = () => {
             <Main>
                 <form onSubmit={handleSubmit}>
                     <input type="text" onChange={(e) => setInput(e.target.value)} />    
-                    <CustomButton itemType="submit">Search</CustomButton>
+                    <CustomButton itemType="submit" data-testid="search">Search</CustomButton>
                 </form>
 
                 {renderCard && (

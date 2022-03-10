@@ -20,6 +20,10 @@ export const CustomHeader = styled.header`
         align-items: center;
         justify-content: space-between;
 
+        a {
+            text-decoration: none;
+        }
+
         h1 {
             color: white;
 
