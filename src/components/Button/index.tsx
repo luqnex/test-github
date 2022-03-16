@@ -1,11 +1,11 @@
-import { HTMLAttributes, ReactNode } from "react"
+import React, { HTMLAttributes, ReactNode } from "react";
 
 import { Button } from "./styled";
 
 interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
-    children: ReactNode;
+  children: ReactNode;
 }
 
 export const CustomButton = ({ children, ...props }: ButtonProps) => (
-    <Button {...props} >{children}</Button>
+  <Button {...props}>{children}</Button>
 );

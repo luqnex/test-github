@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Repositories } from "./pages/Repositories";
 import { Users } from "./pages/User";
@@ -8,9 +9,9 @@ function App() {
     <BrowserRouter>
       <UserContextProvider>
         <Routes>
-            <Route path="/" element={<Users />} />
-            <Route path="/repositories" element={<Repositories />} />
-          </Routes>
+          <Route path="/" element={<Users />} />
+          <Route path="/repositories" element={<Repositories />} />
+        </Routes>
       </UserContextProvider>
     </BrowserRouter>
   );
