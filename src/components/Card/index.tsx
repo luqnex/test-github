@@ -14,16 +14,16 @@ interface UserProps {
 }
 
 interface CardProps {
-  user: UserProps;
+  user?: UserProps;
 }
 
 export const Card = ({ user }: CardProps) => {
   return (
     <CardUser>
-      <img src={user.avatar_url} alt={user.name} />
-      <h3>{user.name}</h3>
-      <p>{user.bio}</p>
-      <p>Repositorios publicos: {user.public_repos}</p>
+      <img src={user?.avatar_url} alt={user?.name} />
+      <h3>{user?.name}</h3>
+      <p>{user?.bio}</p>
+      <p>Repositorios publicos: {user?.public_repos}</p>
       <Link to="/repositories">
         <CustomButton>Repositorios</CustomButton>
       </Link>

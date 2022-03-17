@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 
-import { BrowserRouter, MemoryRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 import { render } from "@testing-library/react";
 

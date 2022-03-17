@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import axios from "axios";
-import { useContext, useEffect, useState } from "react";
+
 import { Navigate } from "react-router-dom";
-import { CustomButton } from "../../components/Button";
-import { Header } from "../../components/Header";
+
 import UserContext from "../../context/Users";
+
+import { Header } from "../../components/Header";
+import { CustomButton } from "../../components/Button";
+
 import { Container, Main } from "./styled";
 
 interface UserRepos {

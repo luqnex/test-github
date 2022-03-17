@@ -14,11 +14,13 @@ describe("Card component", () => {
           login: "teste-login",
           name: "fake 1",
           public_repos: 24,
-          repos_url: "",
+          repos_url: "https://github/teste",
         }}
       />
     );
 
     expect(screen.getByText("teste")).toBeInTheDocument();
+    expect(screen.getByText("fake 1")).toBeInTheDocument();
+    expect(screen.getByText(/24/)).toBeInTheDocument();
   });
 });

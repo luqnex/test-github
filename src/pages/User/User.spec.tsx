@@ -1,8 +1,9 @@
 import React from "react";
 
 import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
+
 import { Users } from ".";
+
 import { UserContextProvider } from "../../context/Users";
 
 describe("Render page User", () => {

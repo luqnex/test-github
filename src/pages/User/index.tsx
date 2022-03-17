@@ -1,14 +1,12 @@
-import React, { FormEvent, useState, useContext } from "react";
+import React, { useContext } from "react";
 
-import { api } from "../../services/api";
-import { Card } from "../../components/Card";
 import UserContext from "../../context/Users";
 
-import { Container, Main } from "./styled";
-
-import { Header } from "../../components/Header";
-import { CustomButton } from "../../components/Button";
+import { Card } from "../../components/Card";
 import { Form } from "../../components/Form";
+import { Header } from "../../components/Header";
+
+import { Container, Main } from "./styled";
 
 export const Users = () => {
   const { user } = useContext(UserContext);
